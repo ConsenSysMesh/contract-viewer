@@ -28,7 +28,7 @@ the React library will be loaded twice in your app and you will get the message 
 
 # Usage example
 
-this module works using contract templates. you basically have define a contract 
+This module works using contract templates. You basically have define a contract 
 template as a js module, as in:
 
 ```javascript
@@ -38,16 +38,16 @@ contract ui_contract_name {\n\
     function ui_function1_name(bytes32 value) {\n\
         ui_string1_name = value;\n\
     }\n\
-}\n\';
+}';
 module.exports = mycontracttemplate;
 ```
 
-after defining your contract template, you `require` it in the react component
-where you are using the contractviewer. you will notice that there are some placeholders
-in the contract template. in our case, all words starting with `ui_` is a placeholder.
-these are the dynamic parts of the contract. when you use the contractviewer, you 
+After defining your contract template, you `require` it in the react component
+where you are using the contractviewer. You will notice that there are some placeholders
+in the contract template. In our case, all words starting with `ui_` is a placeholder.
+these are the dynamic parts of the contract. When you use the contractviewer, you 
 link these placeholders using `state` variables of the react component so that whenever
-the state change, the contract is automatically updated in the webpage. see example
+the state change, the contract is automatically updated in the webpage. See example
 below:
 
 ```javascript
@@ -93,4 +93,5 @@ The code above using the railscasts style will look like this:
 
 ![](https://github.com/consensys/contract-viewer/blob/master/img/Contract-example.png)
 
-
+So, any changes in the state variables of the React component will be reflected imediatly in 
+the contract being shown.
