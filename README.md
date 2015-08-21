@@ -26,6 +26,10 @@ trying to load more than one copy of React.
 As the message says, if you run two distinct version for your code and for this library,
 the React library will be loaded twice in your app and you will get the message above.
 
+# Install
+
+To install this module globally, just type `sudo npm install contract-viewer -g`.
+
 # Usage example
 
 This module works using contract templates. You basically have define a contract 
@@ -51,8 +55,8 @@ the state change, the contract is automatically updated in the webpage. See exam
 below:
 
 ```javascript
-var mytemplace     = require('../data/mycontracttemplate.sol.js');
-var contractviewer = require('contract-viewer');
+var MyTemplate     = require('../data/MyContractTemplate.sol.js');
+var ContractViewer = require('contract-viewer');
 
 var myapp = react.createclass({
     getinitialstate: function() {
