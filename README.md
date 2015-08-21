@@ -91,6 +91,6 @@ and add it to the header section of your page, as in:
 
 The code above using the railscasts style will look like this:
 
-![](https://github.com/consensys/contract-viewer/)
+![](https://github.com/consensys/contract-viewer/blob/master/img/Contract-example.png)
 
 
