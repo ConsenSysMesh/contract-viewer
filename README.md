@@ -18,10 +18,10 @@ Because of a limitation in React, the version used in this library (0.12.2) shou
 matches the version used in your project! Otherwise, you will get the message below
 when running your code:
 
-``
+```
 EventPluginRegistry: Cannot inject event plugin ordering more than once. You are likely 
 trying to load more than one copy of React.
-``
+```
 
 As the message says, if you run two distinct version for your code and for this library,
 the React library will be loaded twice in your app and you will get the message above.
@@ -31,7 +31,7 @@ the React library will be loaded twice in your app and you will get the message 
 this module works using contract templates. you basically have define a contract 
 template as a js module, as in:
 
-``javascript
+```javascript
 var mycontracttemplate = '\n\
 contract ui_contract_name {\n\
     bytes32 ui_string1_name = 'ui_string1_value';\n\
@@ -40,7 +40,7 @@ contract ui_contract_name {\n\
     }\n\
 }\n\';
 module.exports = mycontracttemplate;
-``
+```
 
 after defining your contract template, you `require` it in the react component
 where you are using the contractviewer. you will notice that there are some placeholders
@@ -50,7 +50,7 @@ link these placeholders using `state` variables of the react component so that w
 the state change, the contract is automatically updated in the webpage. see example
 below:
 
-``javascript
+```javascript
 var mytemplace     = require('../data/mycontracttemplate.sol.js');
 var contractviewer = require('contract-viewer');
 
@@ -74,7 +74,7 @@ var myapp = react.createclass({
             />;
     }
 });
-``
+```
 
 To show the resulting contract code, you need to add the desired style in the 
 html file where the code is shown. For instance, if you want to use the `railscasts` 
@@ -82,12 +82,12 @@ style, you should download it from
 [this place](https://github.com/isagalaev/highlight.js/tree/master/src/styles)
 and add it to the header section of your page, as in:
 
-``html
+```html
 <head>
   <link href='/css/railscasts.css' rel='stylesheet'>
   ...
 </head>
-``
+```
 
 The code above using the railscasts style will look like this:
 
