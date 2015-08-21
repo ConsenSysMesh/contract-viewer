@@ -14,7 +14,7 @@ the desired style in the main html file. Styles can be downloaded from
 
 # IMPORTANT WARNING
 
-Because of a limitation in React, the version used in this library (0.12.2) should
+Because of a limitation in React, the react version used in this library (0.12.2) should
 matches the version used in your project! Otherwise, you will get the message below
 when running your code:
 
@@ -34,7 +34,7 @@ template as a js module, as in:
 ```javascript
 var mycontracttemplate = '\n\
 contract ui_contract_name {\n\
-    bytes32 ui_string1_name = 'ui_string1_value';\n\
+    bytes32 ui_string1_name = "ui_string1_value";\n\
     function ui_function1_name(bytes32 value) {\n\
         ui_string1_name = value;\n\
     }\n\
