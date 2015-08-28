@@ -66,11 +66,15 @@ var myapp = react.createclass({
             string1Value : 'Satoshi Nakamoto',
             function1Name: 'setCustomerName'
         };
-    }
+    },
+    onChangeCode: function(contractCode) {
+        // Result contract code is stored on param 'contractCode'
+    },
     render: function() {
         return 
             <ContractViewer
                 contract          = {MyTemplate}
+                onChange          = {this.onChangeCode}
                 ui_contract_name  = {this.state.contractName}
                 ui_string1_name   = {this.state.string1Name}
                 ui_string1_value  = {this.state.string1Value}
@@ -99,3 +103,4 @@ The code above using the railscasts style will look like this:
 
 So, any changes in the state variables of the React component will be reflected imediatly in 
 the contract being shown.
+

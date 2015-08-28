@@ -10,7 +10,7 @@ var ContractViewer = React.createClass({
         var result = contractCode;
         for (var property in this.props) {
             if (this.props.hasOwnProperty(property)) {
-                if (property != 'contract') {
+                if (property != 'contract' && property != 'onChange') {
                     var reg = new RegExp(property, 'g');
                     result = result.replace(reg, this.props[property]);
                 }
@@ -23,6 +23,9 @@ var ContractViewer = React.createClass({
         var originContract = this.props.contract;
         var replacedContract = this.doReplace(originContract);
         var beautified = Beautify(replacedContract);
+        if (typeof this.props.onChange != 'undefined') {
+            this.props.onChange(beautified);
+        }
         return <Highlight className="solidity">{beautified}</Highlight>;
     }
 
