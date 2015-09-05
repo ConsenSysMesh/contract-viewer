@@ -802,7 +802,7 @@ hljs.registerLanguage('solidity', function(hljs) {
         'instanceof with throw case default try this switch continue typeof delete ' +
         'let yield const export super debugger as async await ' +
         'mapping address struct internal public returns ' +
-        'uint uint8 uint16 uint32 uint64 uint128 ' +
+        'string uint uint8 uint16 uint32 uint64 uint128 ' +
         'bytes4 bytes8 bytes16 bytes32 bytes64 bytes128 ' +
         'now block timestamp coinbase difficulty gaslimit number blockhash gas msg.sender ' +
         'gasprice origin contract this ',
