@@ -805,7 +805,7 @@ hljs.registerLanguage('solidity', function(hljs) {
         'string uint uint8 uint16 uint32 uint64 uint128 ' +
         'bytes4 bytes8 bytes16 bytes32 bytes64 bytes128 ' +
         'now block timestamp coinbase difficulty gaslimit number blockhash gas msg.sender ' +
-        'gasprice origin contract this ',
+        'gasprice origin contract this is',
       literal:
         'true false null undefined NaN Infinity',
       built_in:
