@@ -1,7 +1,7 @@
 {
   "name": "contract-viewer",
   "description": "A solidity contract viewer with syntax highlight and beautify",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "author": "Daniel Novy",
   "main": "./src/ContractViewer.js",
   "repository": {

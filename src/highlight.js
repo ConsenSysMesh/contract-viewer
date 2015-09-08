@@ -801,7 +801,7 @@ hljs.registerLanguage('solidity', function(hljs) {
         'in of if for while finally var new function do return void else break catch ' +
         'instanceof with throw case default try this switch continue typeof delete ' +
         'let yield const export super debugger as async await ' +
-        'mapping address struct internal public returns ' +
+        'mapping address struct internal public returns private ' +
         'string uint uint8 uint16 uint32 uint64 uint128 ' +
         'bytes4 bytes8 bytes16 bytes32 bytes64 bytes128 ' +
         'now block timestamp coinbase difficulty gaslimit number blockhash gas msg.sender ' +
