@@ -18,7 +18,7 @@ var ContractViewer = React.createClass({
         }
         return result;
     },
-    
+
     render: function() {
         var originContract = this.props.contract;
         var replacedContract = this.doReplace(originContract);
@@ -26,7 +26,7 @@ var ContractViewer = React.createClass({
         if (typeof this.props.onChange != 'undefined') {
             this.props.onChange(beautified);
         }
-        return <Highlight className="solidity">{beautified}</Highlight>;
+        return <Highlight key='hl673fd4s32' className="solidity">{beautified}</Highlight>;
     }
 
 });

@@ -30,7 +30,7 @@ var Highlight = React.createClass({
     },
 
     render: function () {
-        return <pre><code className={this.props.className}>{this.props.children}</code></pre>;
+        return <pre key='598dhwpx5'><code key='d4mz31tt' className={this.props.className}>{this.props.children}</code></pre>;
     }
 });
 
