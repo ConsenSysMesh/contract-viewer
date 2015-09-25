@@ -1,7 +1,7 @@
 {
   "name": "contract-viewer",
   "description": "A solidity contract viewer with syntax highlight and beautify",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "author": "Daniel Novy",
   "main": "./src/ContractViewer.js",
   "repository": {
@@ -12,13 +12,15 @@
     "url": "https://github.com/consensys/contract-viewer/issues"
   },
   "browserify": {
-    "transform": ["reactify"]
+    "transform": [
+      "reactify"
+    ]
   },
   "dependencies": {
-    "react": "0.12.2",
     "browserify": "11.0.1",
-    "reactify": "1.1.1",
-    "js-beautify": "^1.5.10"
+    "js-beautify": "^1.5.10",
+    "react": "^0.13.3",
+    "reactify": "1.1.1"
   },
   "keywords": [
     "solidity",
