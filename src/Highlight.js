@@ -1,6 +1,7 @@
 /** @jsx React.DOM */
 
 var React = require('react');
+var ReactDOM = require('react-dom');
 var hljs = require('./highlight.js');
 
 var Highlight = React.createClass({
@@ -20,7 +21,7 @@ var Highlight = React.createClass({
     },
 
     highlightCode: function () {
-        var domNode = this.getDOMNode();
+        var domNode = ReactDOM.findDOMNode(this);
         var nodes = domNode.querySelectorAll('pre code');
         if (nodes.length > 0) {
             for (var i = 0; i < nodes.length; i=i+1) {
