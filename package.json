@@ -19,7 +19,7 @@
   "dependencies": {
     "browserify": "11.0.1",
     "highlightjs": "^8.7.0",
-    "highlightjs-solidity": "^1.0.0",
+    "highlightjs-solidity": "^1.0.1",
     "js-beautify": "^1.5.10",
     "react": "^0.14.3",
     "reactify": "1.1.1"
