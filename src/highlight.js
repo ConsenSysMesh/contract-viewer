@@ -866,7 +866,7 @@ hljs.registerLanguage('solidity', function(hljs) {
       },
       {
         className: 'function',
-        beginKeywords: 'function', end: /\{/, excludeEnd: true,
+        beginKeywords: 'function contract struct modifier', end: /\{/, excludeEnd: true,
         contains: [
           hljs.inherit(hljs.TITLE_MODE, {begin: /[A-Za-z$_][0-9A-Za-z$_]*/}),
           {
